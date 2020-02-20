@@ -1,0 +1,555 @@
+.first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content {
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+.content__banner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    margin-bottom: 64px;
+    text-transform: uppercase;
+    color: white;
+}
+.banner {
+    width: 100%;
+}
+.banner__img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+.banner__title {
+    font: bold 30px/29px 'Gotham Pro';
+    position: absolute;
+    top: 76px;
+    left: 54px;
+    width: 209px;
+    margin: 0 0 14px 0;
+}
+.banner__shop {
+    font: bold 12px 'Gotham Pro';
+    position: absolute;
+    top: 175px;
+    left: 54px;
+    width: 129px;
+    margin: 0;
+}
+.banner__shop_link {
+    display: inline-block;
+    color: white;
+}
+.link__text {
+    margin: 0 7px 0 0;
+}
+.link-arrow {
+    width: 46px;
+}
+@media screen and (min-width: 1025px) {
+    .banner__title {
+        top: 91px;
+        left: 60px;
+        width: 195px;
+        margin-bottom: 15px;
+    }
+    .content__banner {
+        margin-bottom: 50px;
+    }
+}
+@media screen and (min-width: 1025px) {
+    .banner__shop {
+        top: 192px;
+        left: 60px;
+        margin: 0;
+    }
+}
+@media screen and (min-width: 1025px) {
+    .link__text {
+        margin: 0 3.5px 0 0;
+    }
+}
+@media screen and (min-width: 1025px) {
+    .link-arrow {
+        width: 43px;
+    }
+}
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    .content__banner {
+        margin-bottom: 62px;
+    }
+    .banner__shop {
+        top: 273px;
+        left: 43px;
+        width: 210px;
+        font: bold 20px 'Gotham Pro';
+        margin: 40px 0 0 0;
+    }
+    .banner__title {
+        width: 355px;
+        font: bold 50px/48px 'Gotham Pro';
+        top: 121px;
+        left: 43px;
+    }
+    .link-arrow {
+        width: 71px;
+    }
+    .link__text {
+        margin: 0 6.4px 0 0;
+    }
+    .banner__img {
+        height: 415px;
+        object-position: 17% top;
+    }
+}
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .content__banner {
+        margin-bottom: 32px;
+    }
+    .banner__shop {
+        top: 122px;
+        left: 48px;
+        width: 206px;
+        font: bold 20px 'Gotham Pro';
+        margin: 12px 0 0 0;
+    }
+    .banner__title {
+        font: bold 20px/19px 'Gotham Pro';
+        top: 65px;
+        left: 48px;
+    }
+    .link-arrow {
+        width: 48px;
+    }
+    .link__text {
+        font: bold 12px 'Gotham Pro';
+        margin: 0;
+    }
+    .banner__img {
+        height: 191px;
+        object-position: 19% top;
+    }
+}
+@media screen and (max-width: 374px) {
+    .content__banner {
+        margin-bottom: 35px;
+    }
+    .banner__shop {
+        top: 125px;
+        left: 20px;
+        width: 206px;
+        font: bold 20px 'Gotham Pro';
+        margin: 9px 0 0 0;
+    }
+    .banner__title {
+        font: bold 20px/19px 'Gotham Pro';
+        top: 67px;
+        left: 20px;
+    }
+    .link-arrow {
+        width: 48px;
+    }
+    .link__text {
+        font: bold 12px 'Gotham Pro';
+        margin: 0;
+    }
+    .banner__img {
+        height: 191px;
+        object-position: 23% top;
+    }
+}
+.content__catalog {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 78px;
+}
+.content__catalog-wrap {
+    margin: 0 auto;
+}
+.content__catalog_title {
+    font: bold 22px/21px 'Gotham Pro';
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 18px 0;
+}
+.content__catalog_product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.catalog__product {
+    display: flex;
+    flex-direction: column;
+    width: 208px;
+    position: relative;
+    margin-right: 33px;
+}
+.catalog__product:nth-child(2):after, .catalog__product:nth-child(3):after {
+    content: "";
+    opacity: 0.2;
+    border: 1px solid black;
+    background: black;
+    height: 101px;
+    position: absolute;
+    right: -17px;
+    top: 37px;
+}
+.catalog__product:first-child:after {
+    content: "";
+    opacity: 0.2;
+    border: 1px solid black;
+    background: black;
+    height: 101px;
+    position: absolute;
+    right: -18px;
+    top: 37px;
+} 
+.catalog__product:last-child {
+    margin-right: 0;
+}
+.product__image {
+    width: 170px;
+    padding: 0 17px 26px 21px;
+}
+.catalog__product_info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 11px; 
+}
+.catalog__product_title {
+    font: 12px/11px 'Gotham Pro';
+    color: black;
+    width: 100%;
+    margin: 0 0 10px 0;
+    text-align: left;
+}
+.product__about {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.product__about_price {
+    margin: 0;
+    font: bold 14px/13px 'Gotham Pro';
+}
+.color__set {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+.color__set_button {
+    margin-right: 7px;
+    border-radius: 50%;
+    padding: 0;
+    width: 7px;
+    height: 8px;
+    border: none;
+    cursor: pointer;
+}
+.color__set_button:nth-child(2) {
+    width: 8px;
+    height: 9px;
+}
+.color__set_button-gray {
+    background: #C4C4C4;
+}
+.color__set_button-black {
+    background: black;
+}
+.color__set_button-darkred {
+    background: #B62E3C; 
+}
+.color__set_button-lightorange {
+    background: #FDB431;
+}
+.color__set_button-gold {
+    background: #E29D69;
+}
+.color__set_button-maroon {
+    background: #762E31;
+}
+.color__set_button-blue {
+    background: #41479B;
+}
+.color__set_button-dodgerblue {
+    background: #257DA9;
+}
+@media screen and (min-width: 1169px) {
+    .content__catalog {
+        margin-bottom: 50px;
+    }
+    .catalog__product {
+        width: 230px;
+        margin-right: 37px;
+    }
+    .catalog__product:nth-child(2):after, .catalog__product:nth-child(3):after {
+        height: 100px;
+        position: absolute;
+        right: -19px;
+        top: 40px;
+    }
+    .catalog__product:first-child:after {
+        height: 100px;
+        position: absolute;
+        right: -20px;
+        top: 40px;
+    } 
+    .content__catalog_title {
+        font: bold 22px/21px 'Gotham Pro';
+    }
+    .product__image {
+        width: 188px;
+        padding: 0 19px 10px 23px; 
+    }
+    .catalog__product_title {
+        margin: 0 0 9px 0;
+    }
+    .product__about_price {
+        margin: 0; 
+    }
+    .color__set {
+        margin-right: 7px;
+    }
+    .color__set_button {
+        width: 7px;
+        height: 7px;
+    }
+    .color__set_button:nth-child(2) {
+        width: 9px;
+        height: 9px;
+    }
+}
+@media screen and (min-width: 900px) and (max-width: 1023px) {
+    .catalog__product:nth-child(4) {
+        display: none;
+    }
+    .catalog__product:nth-child(3) {
+        margin-right: 0;
+    }
+    .catalog__product:nth-child(3):after {
+        display: none;
+    }
+    .catalog__product:nth-child(1):after, .catalog__product:nth-child(2):after {
+        height: 130px;
+    }
+    .content__catalog {
+        padding: 0 25px 0 25px;
+        margin-bottom: 35px;
+    }
+    .catalog__product {
+        width: 250px;
+        margin-right: 45px;
+    }
+    .product__image {
+        width: 200px;
+        padding: 0 17px 27px 21px;
+    }
+    .catalog__product_title {
+        font: 17px/16px 'Gotham Pro';
+        margin: 0 0 9px 18px;
+        text-align: left;
+    }
+    .product__about_price {
+        font: bold 19px/18px 'Gotham Pro';
+        margin: 0 0 0 11px;
+    }
+    .color__set {
+        margin-right: 2px;
+    }
+    .color__set_button {
+        margin-right: 9px;
+        border-radius: 50%;
+        padding: 0;
+        width: 10px;
+        height: 11px;
+        border: none;
+        cursor: pointer;
+    }
+    .color__set_button:nth-child(2) {
+        width: 11px;
+        height: 12px;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .catalog__product {
+        width: 280px;
+        margin-right: 66px;
+    }
+    .catalog__product:nth-child(2)  {
+        margin-right: 0;
+    }
+    .catalog__product:nth-child(3), .catalog__product:nth-child(4) {
+        display: none;
+    }
+    .catalog__product:nth-child(2):after, .catalog__product:nth-child(3):after {
+        display: none;
+    }
+    .catalog__product:first-child:after {
+        display: none;
+    } 
+    .content__catalog_title {
+        width: 100%;
+        font: bold 30px/29px 'Gotham Pro';
+    }
+    .product__image {
+        width: 230px;
+        padding: 0 23px 23px 28px; 
+    }
+    .catalog__product_info {
+        padding-left: 0;
+    }
+    .catalog__product_title {
+        font: 20px/19px 'Gotham Pro';
+        padding-left: 18px;
+        margin: 0 0 18px 0;
+    }
+    .product__about_price {
+        margin: 0;
+        font: bold 25px/24px 'Gotham Pro';
+        padding-left: 20px;
+    }
+    .color__set {
+        margin-right: 10px;
+    }
+    .catalog__product:nth-of-type(2) .color__set {
+        margin-right: 0;
+    }
+    .color__set_button {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+    .color__set_button:nth-child(2) {
+        width: 20px;
+        height: 20px;
+    }
+    .color__set_button:last-child {
+        margin-right: 0;
+    }
+}
+@media screen and (min-width: 690px) and (max-width: 766px) {
+.content__catalog {
+    padding: 0 30px 0 30px;
+    }
+}
+@media screen and (min-width: 767px) and (max-width: 900px) {
+    .content__catalog {
+        padding: 0 75px 0 65px;
+        margin-bottom: 85px;
+    }
+}    
+@media screen and (min-width: 375px) and (max-width: 599px) {
+    .content__catalog {
+        padding: 0 52px 0 44px;
+        margin-bottom: 99px;
+    }
+}
+@media screen and (max-width: 374px) {
+    .content__catalog {
+        padding: 0 20px 0 18px;
+        margin-bottom: 100px;
+    }
+    .content__catalog_title {
+        padding-right: 15px;
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 689px) {
+    .catalog__product {
+        width: 270px;
+        margin-right: 0;
+    }
+    .catalog__product:nth-child(3), .catalog__product:nth-child(4) {
+        display: none;
+    }
+    .content__catalog_title {
+        font: bold 20px/19px 'Gotham Pro';
+        padding-left: 25px;
+    }
+    .product__image {
+        width: 170px;
+        margin: 0 auto;
+    }
+    .catalog__product_title {
+        font: 15px/14px 'Gotham Pro';
+        margin: 0;
+    }
+    .product__about_price {
+        margin: 0;
+        font: bold 20px/19px 'Gotham Pro';
+    }
+    .color__set {
+        margin: 7px 15px 0 0;
+    }
+    .color__set_button {
+        margin-right: 5px;
+        width: 15px;
+        height: 15px;
+    }
+    .color__set_button:nth-child(2) {
+        width: 15px;
+        height: 15px;
+    }
+    .color__set_button:last-child {
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    .catalog__product {
+        width: 281px;
+        margin-right: 0;
+    }
+    .catalog__product:nth-child(2) {
+        display: none;
+    }
+    .catalog__product:first-child:after {
+        display: none;
+    }
+    .catalog__product:nth-child(3), .catalog__product:nth-child(4) {
+        display: none;
+    }
+    .content__catalog_title {
+        font: bold 20px/19px 'Gotham Pro';
+        margin: 0;
+    }
+    .product__image {
+        width: 163px;
+        margin: 0 0 13px 0;
+        padding-left: 60px;
+    }
+    .catalog__product_info {
+        padding-left: 17px; 
+    }
+    .catalog__product_title {
+        font: 15px/14px 'Gotham Pro';
+        margin: 0 0 7px 0;
+        padding-left: 0;
+    }
+    .product__about {
+        padding-left: 0;
+    }
+    .product__about_price {
+        margin-right: 121px;
+        font: bold 20px/19px 'Gotham Pro';
+    }
+    .color__set {
+        margin: 0 15px 0 0;
+    }
+    .color__set_button {
+        margin-right: 5px;
+        width: 15px;
+        height: 15px;
+    }
+    .color__set_button:nth-child(2) {
+        width: 15px;
+        height: 15px;
+    }
+    .color__set_button:last-child {
+        margin-right: 0;
+    }
+}

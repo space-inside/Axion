@@ -1,0 +1,93 @@
+.axion {
+    font-family: 'Gotham Pro', sans-serif;
+    min-width: 320px;
+    max-width: 1170px;
+    overflow-x: hidden;
+    overflow-y: visible;
+    margin: 0 auto; 
+}
+.axion a {
+    text-decoration: none;
+    cursor: pointer;
+}
+.header a:hover {
+    text-decoration: underline yellow;
+    transform: scale(1.1);
+}
+.catalog__product_title:hover {
+  text-decoration: underline yellow;
+}
+.footer a:hover {
+    color: rgb(252,255,97);
+}
+.footer__menu_sale-btn:hover {
+    border: 1.5px solid yellow;
+    border-radius: 45%;
+    color: yellow;
+    animation: swing 0.6s ease;
+    animation-iteration-count: 1;
+}
+@keyframes swing {
+    15% {
+      transform: translateX(9px);
+    }
+    30% {
+      transform: translateX(-9px);
+    }
+    40% {
+      transform: translateX(6px);
+    }
+    50% {
+      transform: translateX(-6px);
+    }
+    65% {
+      transform: translateX(3px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+.banner__shop:hover .link-arrow, .ad__more:hover .ad__more_link, .item__more-wrap:hover .item__more_link {
+    animation: move 0.4s linear;
+    animation-iteration-count: infinite;
+}
+@keyframes move {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(5px);
+    }
+}
+.banner__shop:hover, .ad__more:hover, .item__more-wrap:hover {
+    opacity: 0.6;
+}
+.axion a:link, .axion a:visited, .axion a:focus, .axion a:hover, .axion a:active {
+    outline: none;
+}
+button, button:active, button:focus {
+    outline: none;
+}
+button {
+    cursor: pointer;
+}
+.form__search_placeholder {
+    outline: 0;
+}
+@media screen and (min-width: 1170px) and (max-width: 1310px) {
+    .site {
+    margin: 0 70px;
+    }
+}
+
+@media screen and (min-width: 1023px) and (max-width: 1169px) {
+    .site {
+    margin: 0 47px;
+    }
+}
+
+@media screen and (max-width: 1022px) {
+    .site{
+    margin: 0;
+    }
+}
